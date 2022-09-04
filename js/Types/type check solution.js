@@ -1,5 +1,5 @@
 if (!Object.is || true) {
-    Object.is = function objects(x, y) {
+    Object.is = function ObjectsIs(x, y) {
         var x_Negzero = isItNegzero(x);
         var y_Negzero = isItNegzero(y);
 
@@ -13,11 +13,11 @@ if (!Object.is || true) {
                 return x === y;
             
         }
-        function isItNegzero(x) {
-            return x == 0 && (1 / x) == -Infinity;
+        function isItNegzero(v) {
+            return v == 0 && (1 / v) == -Infinity;
         }
-        function isItNeg(x) {
-            return x !== x;
+        function isItNaN(v) {
+            return v !== v;
         }
     }
 }
