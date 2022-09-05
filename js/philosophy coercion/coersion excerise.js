@@ -31,7 +31,7 @@ function hoursAttended(attended, length) {
 
 }
 //tests
-console.log(isvalidName("frank") === true);
+console.log(isvalidName("fran") === true);
 console.log(hoursAttended(6, 8) === true);
 console.log(hoursAttended(6, "10") === true);
 console.log(hoursAttended("6", 10) === true);
@@ -39,5 +39,6 @@ console.log(isvalidName(null) === false);
 console.log(isvalidName(false) === false);
 console.log(isvalidName(undefined) === false);
 console.log(isvalidName("") === false);
+console.log(hoursAttended("6", "") === false);
 
 
