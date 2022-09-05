@@ -26,4 +26,11 @@ console.log(3 > 2 > 1);
 console.log(3 > 2) > 1; //so worse code need know
 console.log(true) > 1;
 console.log(1 > 1);
-
+// root of all(coercion)
+var studentsInput = {
+    value: 0
+}
+studentsInput.value = "";
+console.log(studentsInput.value);
+var b = console.log(Number(studentsInput.value));
+console.log(typeof (studentsInput.value));
