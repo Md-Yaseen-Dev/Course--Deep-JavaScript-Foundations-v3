@@ -5,7 +5,7 @@
 // }
 //-------manual boxing
 let flag1 = new Boolean(true);
-if (flag1 === true) {
+if (flag1) {
     console.log['inside flag1']
 }
 let flag2 = new Boolean(false)

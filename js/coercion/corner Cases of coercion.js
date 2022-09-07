@@ -23,7 +23,7 @@ console.log(1 < 2 < 3);
 console.log(3 > 2);
 console.log(2 > 1);
 console.log(3 > 2 > 1);
-console.log(3 > 2) > 1; //so worse code need know
+console.log(3 > 2) > 1; //so code need to know
 console.log(true) > 1;
 console.log(1 > 1);
 // root of all(coercion)
