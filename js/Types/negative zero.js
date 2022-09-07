@@ -1,6 +1,6 @@
 var zero = -0;
 console.log(zero);
-var tri_equal = zero === -0;
+var tri_equal = 0 === -0;
 console.log(tri_equal);
 console.log(zero.toString());
 console.log(zero>0);
