@@ -1,7 +1,7 @@
 // ------lexial scope-------
 // simpler, the lexical scoping means that inside the inner scope you can access variables of outer spaces 
 
-const myName = "yaseen";
+const myName = "yaseen";-
 function func() {
     const myAge = "twenty";
     console.log(myName);

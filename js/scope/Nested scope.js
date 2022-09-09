@@ -5,6 +5,6 @@ var teacher = "kyle";
     function ask(question){
         console.log(teacher,question);
     }
-    ask(question);
+    ask("why/");
  }
  otherclass();

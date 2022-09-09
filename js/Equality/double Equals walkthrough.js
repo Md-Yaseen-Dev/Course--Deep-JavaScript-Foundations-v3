@@ -10,3 +10,10 @@ else {
 if (number === Number("10")){
     console.log(typeof number +" "+  typeof [10])
 }
+
+if (isNaN(("dftd"))){
+    console.log("done");
+}
+else{
+    console.log("invalid")
+}

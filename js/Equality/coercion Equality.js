@@ -20,3 +20,24 @@ if (1 == true) {
 else {
     console.log("1 is not equal to true");
 }
+
+
+var workshop = { topic: null };
+var workshop4 = {}; // {topic :10}
+
+if (workshop.topic === null || workshop.topic === undefined) {
+    console.log(true)
+}
+if (workshop4.topic === null || workshop4.topic === undefined) {
+    console.log(true)
+}
+else {
+    console.log(false)
+}
+// coercion comparsion
+if (workshop.topic == null && workshop4.topic == null) {
+    console.log("yes");
+}
+else {
+    console.log("NO");
+}

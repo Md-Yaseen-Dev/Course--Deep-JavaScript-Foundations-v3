@@ -18,7 +18,6 @@ var bool = function(){};
 console.log(Boolean(bool));
 var bool = {b:1}
 console.log(Boolean(bool));
-
-
+console.log(Boolean({}))
 
 

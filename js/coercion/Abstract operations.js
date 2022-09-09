@@ -12,4 +12,6 @@ const object1 = {
     }
 };
 console.log(+object1);
-console.log("$object1");
+console.log("object1");
+console.log(object1.toString());
+console.log(object1.valueOf());

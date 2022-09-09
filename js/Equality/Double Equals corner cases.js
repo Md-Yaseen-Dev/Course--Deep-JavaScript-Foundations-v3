@@ -5,7 +5,7 @@ function workshop() {
     if (workshop1 == !workshop2) {
         return "yep";
     }{
-    return "No";s
+    return "No";
     }}
     function workshop3(){
     if (workshop1 !== workshop2) {
