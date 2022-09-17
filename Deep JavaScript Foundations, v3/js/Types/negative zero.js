@@ -1,0 +1,10 @@
+var zero = -0;
+console.log(zero);
+var tri_equal = 0 === -0;
+console.log(tri_equal);
+console.log(zero.toString());
+console.log(zero>0);
+console.log(zero<0);
+console.log(Object.is(zero,-0));
+console.log(Object.is(zero,0));
+console.log(Math.sign(-0));
