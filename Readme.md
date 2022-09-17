@@ -10,7 +10,7 @@ Equality comparsion provides three types they are :-
 
 #### Loose equality ==
 
-Double equals (==) will perform a type of conversion when comparing two things and will handle NAN, -0, and +0 specially to conform to IEE 754(so NaN!=NaN, and -0 == +0 );
+Double equals (==) will perform a type of conversion when comparing two things and will handle NAN, -0, and +0 specially to confirm to IEE 754(so NaN!=NaN, and -0 == +0 );
 
 #### Strict equality using ===
 
