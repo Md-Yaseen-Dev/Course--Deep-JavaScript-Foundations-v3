@@ -1,6 +1,6 @@
 ## Equality (==)
 
-The Equality operator (==) checks whether its two Operands are equal,returning a Boolean result. Unlike the Strict equality operator, it attemnpts to convert and compare operands that are of different types
+The Equality operator (==) checks whether its two Operands are equal,returning a Boolean result. Unlike the Strict equality operator, it attempts to convert and compare operands that are of different types
 
 Equality comparsion provides three types they are :-
 
