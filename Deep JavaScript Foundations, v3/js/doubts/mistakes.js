@@ -1,7 +1,7 @@
 var x = 0.1;
 var y = 0.2;
 console.log(x + y);
-var day = (a, b) => "sadday" + " " + a * b;
+var day = (a, b) =>  a * b;
 console.log(day(10, 20))
 console.log(day(1, 20))
 console.log(day(0, 20))

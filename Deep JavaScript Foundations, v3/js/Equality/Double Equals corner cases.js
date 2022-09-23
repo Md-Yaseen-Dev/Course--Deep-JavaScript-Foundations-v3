@@ -16,6 +16,7 @@ function workshop() {
 console.log(workshop());
 console.log(workshop3());
 // algorithm
+// [] == false --> true
 // [] == "" --> true
 // "" == false --> true
 // 0 == false --> true

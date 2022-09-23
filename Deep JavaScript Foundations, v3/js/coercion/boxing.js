@@ -1,7 +1,6 @@
 // boxing is the process in which a primitive value is wrapped in an Object
-
 // if(studentNameElem.value.length > 50){
-//     console.log('students name is too long')
+//   console.log('students name is too long')
 // }
 //-------manual boxing
 let flag1 = new Boolean(true);

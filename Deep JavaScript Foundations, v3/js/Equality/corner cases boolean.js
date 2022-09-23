@@ -14,3 +14,6 @@ if (workshopstudents == false){
 else{
     console.log("nope");
 }
+// algorithm
+// [] == true ; --> false
+// [] == false ; --> true
