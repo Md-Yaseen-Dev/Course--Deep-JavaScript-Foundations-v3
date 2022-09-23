@@ -1,1 +1,0 @@
-//So conceptually the first floor is our current scope where the reference and the top floor is the global scope.
