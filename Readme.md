@@ -54,7 +54,7 @@ Lexical scope is tha ability of the inner function to access the outer scope in 
 
 ## To know more click the link below :-
 
-[Scopes](https://github.com/mohammedyaseen2211/)Course--Deep-JavaScript-Foundations-v3/tree/main/js/scope)
+[Scopes](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/scope)
 
 # Scopes Expression
 
