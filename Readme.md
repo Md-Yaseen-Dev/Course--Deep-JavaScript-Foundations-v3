@@ -240,3 +240,86 @@ IIFEs are whether anonymous are not but that are functions, which means we can p
 [IIFE Pattern](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/blob/main/js/Advance%20scope/IIFE%20.js)
 
 
+## Blocking Scoping
+
+Block Level Scope: This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped. In order to access the variables of that specific block, we need to create an object for it. Variables declared with the var keyword, do not have block scope.
+
+*for example:-*
+
+```javascript
+`            Scopes Restrict the variables outside`
+{
+  let p = 110;
+  const q = 100;
+}
+console.log(p); // refernce Error p is not defined
+console.log(q); // refernce Error q is not defined
+
+  `scope doesn't restrict  var variable outside the block`
+
+{
+  var a = 100;
+  var b = 200;
+}
+console.log(a);// a =100
+console.log(b);// b =100
+```
+
+So, here let and const are blocked scope because . they got reference error when we use outside of the block.
+if you see var it is not a blocked scope because,it is working outside of the block.
+
+## Choosing let or var
+
+var and let are both used for variable declartion in javascript but the difference between them is that var is function scoped and let is blocked scoped. Variable declared by let cannot be redeclared and must be declared before use whereas variables declared with var keyword are hoisted.
+
+```javascript
+console.log(x);//undefined
+var x =5;
+console.log(x);// 5
+```
+
+```javascript
+console.log(y);
+let y =5;
+console.log(y);
+// ReferenceError: Cannot access 'y' before initialization
+```
+
+** javascript let Vs var 
+
+|let                                        |        	var
+--------------------------------------------|---------------------------------    
+|let is block-scoped.	                      |var is function scoped.
+|let does not allow to redeclare variables. |	var allows to redeclare variables.
+|Hoisting does not occur in let.	          |Hoisting occurs in var.
+
+
+## Const Keyword
+
+ The const keyword, which is used to define a new variable in JavaScript. Generally, the var keyword is used to declare a JavaScript variable. Const is another keyword to declare a variable when you do not want to change the value of that variable for the whole program.
+
+ **According to kyle simpson**
+ kyle simpson says you should not even use let and you should only use const wherever possible.
+ so the problem with the const is essentially the const keyword doesn't carry its own weight within the language.
+
+ Every time the const keyword has ever been added to any programming language, programmers got confused.
+ the reason they get confused, is because when we think of const, and we think of the word Constant, doesn't change.but that's not what a programmer means by const.
+  A programming language designer means a variable that can't be reassigned.
+
+  ```javascript
+
+var teacher = "suzy";
+teacher = "kyle";
+
+const myTeacher = teacher;
+ myTeacher = "suzm";  // getting typeerror for assign
+
+const teachers = ["kyle", "suzi"];
+teachers[1] = "braine"; // but here assigning its working
+
+console.log(teacher);
+console.log(teachers);
+console.log(myTeacher);
+ 
+ ```
+ This is baggage of const . we should follow of mutual values and mutual assignments.
