@@ -217,3 +217,26 @@ There are three main problems that we solve by this defensive approach of the le
  otherclass(); If you put parentheses around a function and it's still gonna execute.
 The reason behind the problem is first parenthesis get the value of a variable and second parenthesiswill gonna execute it.
 
+# IIFE (Immediate Invoked Function Expression )
+
+An IIFE is a javascript function that runs as soon as it is defined. The name IIFE is promoted by Ben Alman
+
+``` javascript
+(function () {
+  console.log("hello yaseen ");
+})();
+```
+**IIFE is anonymous**
+
+```javascript
+
+(function(teacher){
+  console.log(teacher);
+})("robart")
+```
+IIFEs are whether anonymous are not but that are functions, which means we can pass in values.
+
+## To know more about click the link below :-
+[IIFE Pattern](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Advance%20scope)
+
+
