@@ -1,8 +1,9 @@
 var teacher = "kyle";
-function otherclass() {
-    var teacher = "suzy";
-uu}
-otherclass();
+ function otherclass(){
+var teacher = "suzy";
+console.log(teacher);
+ }
+ otherclass();
 console.log(teacher);
 
 
@@ -22,4 +23,4 @@ console.log(teacher);
 
 (otherclass)();
 // if u put parentheses around a function and it's still gonna execute.
-//The reason behind the problem is first parenthesis get the value of a variable and second parenthesiswill gonna execute it.
+//The reason behind the problem is first parenthesis get the value of a variable and second parenthesiswill gonna execute
