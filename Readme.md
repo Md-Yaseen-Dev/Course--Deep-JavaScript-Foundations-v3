@@ -136,7 +136,7 @@ console.log("only a is a accessible (global):", a);
 
 ## To know more example click below :-
 
-[Lexical scope]()
+[Lexical scope](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/blob/main/js/Advance%20scope/Lexical%20socpe.js)
 
 ## Dynamic scopes
 
@@ -187,7 +187,7 @@ To be clear, Javascript does not have dynamic scope. It has lexical scope. But n
 
 ## To know more examples click the link below:-
 
-[Dynamic scope]()
+[Dynamic scope](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/blob/main/js/Advance%20scope/Dynamic%20scope.js)
 
 ## Function scoping
 
@@ -217,7 +217,7 @@ There are three main problems that we solve by this defensive approach of the le
  otherclass(); If you put parentheses around a function and it's still gonna execute.
 The reason behind the problem is first parenthesis get the value of a variable and second parenthesiswill gonna execute it.
 
-# IIFE (Immediate Invoked Function Expression )
+## IIFE (Immediate Invoked Function Expression )
 
 An IIFE is a javascript function that runs as soon as it is defined. The name IIFE is promoted by Ben Alman
 
@@ -237,6 +237,6 @@ An IIFE is a javascript function that runs as soon as it is defined. The name II
 IIFEs are whether anonymous are not but that are functions, which means we can pass in values.
 
 ## To know more about click the link below :-
-[IIFE Pattern](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Advance%20scope)
+[IIFE Pattern](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/blob/main/js/Advance%20scope/IIFE%20.js)
 
 
