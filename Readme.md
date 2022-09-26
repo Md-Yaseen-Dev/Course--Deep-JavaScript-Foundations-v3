@@ -100,3 +100,4 @@ for Example:-
 var arrowfunction = (a, b) => a * b;
 ```
 ## To know more click below :-
+[Scope Expression](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Scopes%20and%20Expression)
