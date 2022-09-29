@@ -335,15 +335,21 @@ Javascript Hoisting refers to the process whereby the interpreter appears to mov
 var a;
 a = 5;
 console.log(a);
+
+// By using Intilazation first
+
+a = 8;
+var a;
+console.log(a);
 ```
 
 **Note :-**
 
- However in Javascript, intializations are not hoisted. For example,
-```javascript
+However in Javascript, intializations are not hoisted. For example,
 
+```javascript
 console.log(a);
-var a = 5;//undefined
+var a = 5; //undefined
 ```
 
 # Closure
@@ -351,15 +357,15 @@ var a = 5;//undefined
 Closures are defined as inner functions that have access to variables and parameters of outer function even after the outer function has returned. The below examples show the practical use of closures :
 
 ```javascript
-function mulFn(){
+function mulFn() {
   var mul = 9;
-  return function(val){
-  mul = mul * val;
-  return mul;
-  }
+  return function (val) {
+    mul = mul * val;
+    return mul;
+  };
 }
 
 var mul = mulfn();
 console.log(mul); // function anonymous
-console.log(mul(13))
+console.log(mul(13));
 ```
