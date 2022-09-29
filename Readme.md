@@ -345,3 +345,21 @@ console.log(a);
 console.log(a);
 var a = 5;//undefined
 ```
+
+# Closure
+
+Closures are defined as inner functions that have access to variables and parameters of outer function even after the outer function has returned. The below examples show the practical use of closures :
+
+```javascript
+function mulFn(){
+  var mul = 9;
+  return function(val){
+  mul = mul * val;
+  return mul;
+  }
+}
+
+var mul = mulfn();
+console.log(mul); // function anonymous
+console.log(mul(13))
+```
