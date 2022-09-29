@@ -1,11 +1,11 @@
-// // var student
-// // var teacher;
+// var student
+// var teacher;
 
-// // student;
-// // teacher;
-// // console.log(student);
-// // student = "you";
-// // console.log(student);
+// student;
+// teacher;
+// console.log(student);
+// student = "you";
+// console.log(student);
 
 
 // // function hoisting
@@ -24,16 +24,16 @@
 
 //let doesn't  hositing
 
-{
-    teacher ="kyle";
-    let teacher;
-console.log(teacher);// refference Error: cannot access teacher before intialization.
+// {
+//     teacher ="kyle";
+//     let teacher;
+// console.log(teacher);// refference Error: cannot access teacher before intialization.
 
-}
+// }
 
-var teacher = "kyle";
 
-{
-    console.log(teacher);
-    let teacher = "suzt";
-}
+// 
+
+a =10;
+var a;
+console.log(a)

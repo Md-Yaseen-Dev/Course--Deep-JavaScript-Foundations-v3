@@ -22,8 +22,10 @@ function ask(question) {
   setTimeout(function WaitAsec() {
     console.log(question);
 
-  },400);
+  },40);
 
 }
 
 ask("what is closure?")
+
+
