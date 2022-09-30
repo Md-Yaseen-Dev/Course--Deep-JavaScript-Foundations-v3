@@ -374,29 +374,27 @@ console.log(mul(13));
 
 The module Pattern is one of the important patterns in Javascript. It is a commonly used Design Pattern which is used to wrap a set of varaibles and functions together in a single scope.
 
-* It is used to define objects and specify the variables and the functions that can be accessed from outside the scope of the function.
+- It is used to define objects and specify the variables and the functions that can be accessed from outside the scope of the function.
 
-* We expose certain properties and function as public and can also restirct the scope of properties and functions within the object itself, making them private.
+- We expose certain properties and function as public and can also restirct the scope of properties and functions within the object itself, making them private.
 
-* We can achieve data hiding an abrastraction using this pattern.
+- We can achieve data hiding an abrastraction using this pattern.
 
 ```javascript
-
 function EmployeeDetails() {
-    var name = "Mayank";
-    var age = 30;
-    var designation = "Developer"
-    var salary = "50000"
+  var name = "Mayank";
+  var age = 30;
+  var designation = "Developer";
+  var salary = "50000";
 
-    return {
-        name: name,
-        age: age,
-        designation: designation
-        
-    }
+  return {
+    name: name,
+    age: age,
+    designation: designation,
+  };
 }
 
-var newEmployee = EmployeeDetails()
+var newEmployee = EmployeeDetails();
 
 var userName = newEmployee.name;
 var userAge = newEmployee.age;
@@ -409,3 +407,49 @@ console.log(userDesignation);
 console.log(newEmployee);
 console.log(usersalary);
 ```
+
+# Objects
+
+## The this keyword
+In javascript, the this keyword refers to an object.
+
+which object depends on how this this is being invoked(used or called).
+
+The this keyword refers to different objects depending on how it is used.
+
+```
+In an object method, this refers to the object.
+
+Alone, this refers to the global object.
+
+In a function, in strict mode, this is undefined.
+
+In an event, this refers to the element that received the event.
+
+Methods like call(), apply(), and blind(), can refer this to any  object.
+```
+_for example_;-
+
+```javascript
+let person = {
+    name: "yaseen",
+    age: 20,
+    info: function () {
+        console.log(this.name + " is " + this.age + " years old")
+    }
+}
+person.info();
+```
+---
+**kyle simpson Theroy**
+
+A function's this refernces the execution context for that call. determined entirely by how the functions was called
+
+     A context in which that call was being made. and that is determined entirely by how the function is called.
+
+     In other words, that ths key word assignment, if you look at a function that
+     has this keyword in it, it is assigned based upon how the function is called.
+
+    So, In other words, that this keyword is javascript version of dynamic scope if it's this way of having as flexible 
+   ---
+
