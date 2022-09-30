@@ -12,9 +12,9 @@ person.info();
 
 function ask(question) {
    
-    // var mycontext = {
-    //     teacher: "sam"
-    // };
+    var mycontext = {
+        teacher: "sam"
+    };
     console.log(this.teacher, question);
 }
 
@@ -26,4 +26,5 @@ function otherclass() {
 }
 
 otherclass();
+// ask("hello")
 // ask.call(mycontext,"sorry")
