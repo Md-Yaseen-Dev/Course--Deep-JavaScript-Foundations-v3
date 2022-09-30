@@ -460,6 +460,8 @@ A function's this refernces the execution context for that call. determined enti
 
 ## Implict and Explict Binding
 
+**Implict Binding:-**
+---
 Implict Binding is appiled when you invoke a function in an object using the dot notation. this in such scenariros will point to the object using which the function was invoked.Or simply the object on the left side of the dot.
 
 _for example :-_
@@ -474,4 +476,28 @@ const obj = {
 };
 obj.myfunction();
 // {somekey: 1, myfunction: f}. i.e obj
+```
+
+__Explicit Binding__
+---
+In this method, you can force a function to use a certain object as its this. Explicit Binding can be applied using call(), apply|(), and bind().
+
+__call():__ Pass in the required object as the first parameter during the function call. The actual parameters are passed after the object.
+
+__apply:__ Similar to call() with a difference in the way the actual arguments are passed. Here, the actual arguments are passed as an array.
+
+```javascript
+function myFunction(param1, param2) {
+    console.log(this)     
+  }
+ 
+const obj = {
+  someKey: 1, 
+}
+
+const param1 = 1, param2 = 2;
+myFunction.call(obj, param1, param2)       // {someKey: 1}
+myFunction.apply(obj, [param1, param2])    // {someKey: 1}
+
+
 ```
