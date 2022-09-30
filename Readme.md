@@ -411,6 +411,7 @@ console.log(usersalary);
 # Objects
 
 ## The this keyword
+
 In javascript, the this keyword refers to an object.
 
 which object depends on how this this is being invoked(used or called).
@@ -428,19 +429,22 @@ In an event, this refers to the element that received the event.
 
 Methods like call(), apply(), and blind(), can refer this to any  object.
 ```
+
 _for example_;-
 
 ```javascript
 let person = {
-    name: "yaseen",
-    age: 20,
-    info: function () {
-        console.log(this.name + " is " + this.age + " years old")
-    }
-}
+  name: "yaseen",
+  age: 20,
+  info: function () {
+    console.log(this.name + " is " + this.age + " years old");
+  },
+};
 person.info();
 ```
+
 ---
+
 **kyle simpson Theroy**
 
 A function's this refernces the execution context for that call. determined entirely by how the functions was called
@@ -450,6 +454,24 @@ A function's this refernces the execution context for that call. determined enti
      In other words, that ths key word assignment, if you look at a function that
      has this keyword in it, it is assigned based upon how the function is called.
 
-    So, In other words, that this keyword is javascript version of dynamic scope if it's this way of having as flexible 
-   ---
+    So, In other words, that this keyword is javascript version of dynamic scope if it's this way of having as flexible
 
+---
+
+## Implict and Explict Binding
+
+Implict Binding is appiled when you invoke a function in an object using the dot notation. this in such scenariros will point to the object using which the function was invoked.Or simply the object on the left side of the dot.
+
+_for example :-_
+
+```javascript
+function myfunction() {
+  console.log(this);
+}
+const obj = {
+  somekey: 1,
+  myfunction: myfunction,
+};
+obj.myfunction();
+// {somekey: 1, myfunction: f}. i.e obj
+```
