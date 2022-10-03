@@ -43,7 +43,7 @@ workshop.ask('Is this a module?');
 
 // here we  can see properties and functions that exist are public, therefore it's not a module.
 
-//Modules encapuslate date and behaviour methods together. The state of a module is held by its mehtods via closure.
+//Modules encapuslate date and behaviour methods together. The state of a module is held by its methods via closure.
 
 var workshop = (function Module(teacher){
     var publicAPI ={ask,};
