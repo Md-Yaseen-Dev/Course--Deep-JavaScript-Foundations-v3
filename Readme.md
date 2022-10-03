@@ -330,7 +330,7 @@ This is baggage of const . we should follow of mutual values and mutual assignme
 Javascript Hoisting refers to the process whereby the interpreter appears to move the decalaration of functions, variables or classes to the top of their scope, prior to execution of the code. Hoisting allows functions to be safely used in code before they are declared.
 
 ```javascript
-// hoisting in javascript is a behavior in which a function or a variable can be used before declaration> For example
+// hoisting in javascript is a behavior in which a function or a variable can be used before declaration For example
 
 var a;
 a = 5;
@@ -501,7 +501,7 @@ myFunction.apply(obj, [param1, param2])    // {someKey: 1}
 
 
 ```
-__Bind():__ In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
+__Blind():__ In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
 
 ```javascript
 function myFunction() {
@@ -514,4 +514,108 @@ const obj = {
 
 const boundFunction = myFunction.bind(obj)
 boundFunction();      // {someKey: 1}
+```
+## classes
+
+Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+   JavaScript class is similar to the Javascript constructor function, and it is merely a syntactic sugar.
+
+   The constructor function is defined as:
+
+```javascript
+constructor function
+function Person () {
+    this.name = 'John',
+    this.age = 23
+}
+
+// create an object
+const person1 = new Person();
+```
+
+Instead of using the function keyword, you use the class keyword for creating JS classes. For example,
+
+```javascript
+// creating a class
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+```
+
+The class keyword is used to create a class. The properties are assigned in a constructor function.
+
+Now you can create an object. For example,
+```javascript
+// creating a class
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+// creating an object
+const person1 = new Person('John');
+const person2 = new Person('Jack');
+
+console.log(person1.name); // John
+console.log(person2.name); // Jack
+```
+Here, person1 and person2 are objects of Person class.
+
+---
+**Note:** The constructor() method inside a class gets called automatically each time an object is created.
+
+
+classes are of two components they are 
+
+ 1. Class declarations
+ 1. Class expressions
+
+ ### Class declarations
+
+ One way to define a class is using a class declaration. To declare a class, you use the class keyword with the name of the class ("Rectangle" here).
+
+__Example__
+
+```javascript 
+
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+```
+### Class expressions
+
+A class expression is another way to define a class. Class expressions can be named or unnamed. The name given to a named class expression is local to the class's body. However, it can be accessed via the name property.
+
+
+__Exmaple__
+
+```javascript
+// unnamed
+let Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+console.log(Rectangle.name);
+// output: "Rectangle"
+
+// named
+Rectangle = class Rectangle2 {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+console.log(Rectangle.name);
+// output: "Rectangle2"
+
 ```
