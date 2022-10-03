@@ -501,7 +501,7 @@ myFunction.apply(obj, [param1, param2])    // {someKey: 1}
 
 
 ```
-__Blind():__ In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
+__Bind():__ In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
 
 ```javascript
 function myFunction() {
