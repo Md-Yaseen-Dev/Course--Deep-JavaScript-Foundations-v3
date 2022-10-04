@@ -619,3 +619,18 @@ console.log(Rectangle.name);
 // output: "Rectangle2"
 
 ```
+# Prototype
+
+In javascript, every function and object has a property named prototype by default. 
+
+__For Example__
+
+```javacript
+function person(){
+  this.name ="yaseen",
+  this.age = 23
+}
+//Creating objects
+const person1 = new Person();
+const person2 = new Person();
+```
