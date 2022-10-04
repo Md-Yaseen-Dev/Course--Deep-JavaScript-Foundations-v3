@@ -634,3 +634,41 @@ function person(){
 const person1 = new Person();
 const person2 = new Person();
 ```
+## Protypal class
+
+The Prototypal inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. 
+
+__Example__
+
+```javascript
+function Workshop (teacher){
+this. teacher = teacher;
+}
+Workshop.prototype.ask = function(question){
+    console.log(this.teacher,question);
+};
+
+var deepjs = new Workshop("kyle");
+var reactjs = new Workshop("suzy");
+
+deepjs.ask("Is 'prototype' a class?");
+
+reactjs.ask("isn't 'protoype' ugly?")
+```
+
+## Prototype Chain
+
+Every object ub havascript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype . making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+
+__Example__
+
+```javascript
+const myObject = {
+  city: "Madrid",
+  greet() {
+    console.log(`Greetings from ${this.city}`);
+  },
+};
+
+myObject.greet(); // Greetings from Madrid
+```
