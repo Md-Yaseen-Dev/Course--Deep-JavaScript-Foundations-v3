@@ -703,7 +703,7 @@ deepjs.ask("what's up")
 
 ## Shadowing Prototype
 
-When creating a property on an object that has the same property name on its prototype chain it will shadow the proeprty on its prototype. This means that the property defined on the object will aleays be found first instead of looking through the prototype for the  proeprty.
+When creating a property on an object that has the same property name on its prototype chain it will shadow the proeprty on its prototype. This means that the property defined on the object will always be found first instead of looking through the prototype for the  property
 
 __Example__
 
