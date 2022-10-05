@@ -273,7 +273,7 @@ if you see var it is not a blocked scope because,it is working outside of the bl
 
 ## Choosing let or var
 
-var and let are both used for variable declartion in javascript but the difference between them is that var is function scoped and let is blocked scoped. Variable declared by let cannot be redeclared and must be declared before use whereas variables declared with var keyword are hoisted.
+var and let are both used for variable declartion in javascript but the difference between them is that var is function scoped and let is blocked scoped. Variable declared but let cannot be redeclared and must be declared before use whereas variables declared with var keyword are hoisted.
 
 ```javascript
 console.log(x); //undefined
@@ -427,7 +427,7 @@ In a function, in strict mode, this is undefined.
 
 In an event, this refers to the element that received the event.
 
-Methods like call(), apply(), and blind(), can refer this to any  object.
+Methods like call(), apply(), and bind(), can refer this to any  object.
 ```
 
 _for example_;-
@@ -460,8 +460,8 @@ A function's this refernces the execution context for that call. determined enti
 
 ## Implict and Explict Binding
 
-**Implict Binding:-**
----
+## **Implict Binding:-**
+
 Implict Binding is appiled when you invoke a function in an object using the dot notation. this in such scenariros will point to the object using which the function was invoked.Or simply the object on the left side of the dot.
 
 _for example :-_
@@ -478,50 +478,51 @@ obj.myfunction();
 // {somekey: 1, myfunction: f}. i.e obj
 ```
 
-__Explicit Binding__
----
+## **Explicit Binding**
+
 In this method, you can force a function to use a certain object as its this. Explicit Binding can be applied using call(), apply|(), and bind().
 
-__call():__ Pass in the required object as the first parameter during the function call. The actual parameters are passed after the object.
+**call():** Pass in the required object as the first parameter during the function call. The actual parameters are passed after the object.
 
-__apply:__ Similar to call() with a difference in the way the actual arguments are passed. Here, the actual arguments are passed as an array.
+**apply:** Similar to call() with a difference in the way the actual arguments are passed. Here, the actual arguments are passed as an array.
 
 ```javascript
 function myFunction(param1, param2) {
-    console.log(this)     
-  }
- 
-const obj = {
-  someKey: 1, 
+  console.log(this);
 }
 
-const param1 = 1, param2 = 2;
-myFunction.call(obj, param1, param2)       // {someKey: 1}
-myFunction.apply(obj, [param1, param2])    // {someKey: 1}
+const obj = {
+  someKey: 1,
+};
 
-
+const param1 = 1,
+  param2 = 2;
+myFunction.call(obj, param1, param2); // {someKey: 1}
+myFunction.apply(obj, [param1, param2]); // {someKey: 1}
 ```
-__Blind():__ In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
+
+**Blind():** In this method, you create a new function with a fixed this . These types of functions created using bind() are commonly known as bound functions.
 
 ```javascript
 function myFunction() {
-    console.log(this)     
-  }
- 
-const obj = {
-  someKey: 1, 
+  console.log(this);
 }
 
-const boundFunction = myFunction.bind(obj)
-boundFunction();      // {someKey: 1}
+const obj = {
+  someKey: 1,
+};
+
+const boundFunction = myFunction.bind(obj);
+boundFunction(); // {someKey: 1}
 ```
+
 ## classes
 
 Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
 
-   JavaScript class is similar to the Javascript constructor function, and it is merely a syntactic sugar.
+JavaScript class is similar to the Javascript constructor function, and it is merely a syntactic sugar.
 
-   The constructor function is defined as:
+The constructor function is defined as:
 
 ```javascript
 constructor function
@@ -548,6 +549,7 @@ class Person {
 The class keyword is used to create a class. The properties are assigned in a constructor function.
 
 Now you can create an object. For example,
+
 ```javascript
 // creating a class
 class Person {
@@ -557,45 +559,44 @@ class Person {
 }
 
 // creating an object
-const person1 = new Person('John');
-const person2 = new Person('Jack');
+const person1 = new Person("John");
+const person2 = new Person("Jack");
 
 console.log(person1.name); // John
 console.log(person2.name); // Jack
 ```
+
 Here, person1 and person2 are objects of Person class.
 
 ---
+
 **Note:** The constructor() method inside a class gets called automatically each time an object is created.
 
+classes are of two components they are
 
-classes are of two components they are 
+1.  Class declarations
+1.  Class expressions
 
- 1. Class declarations
- 1. Class expressions
+### Class declarations
 
- ### Class declarations
+One way to define a class is using a class declaration. To declare a class, you use the class keyword with the name of the class ("Rectangle" here).
 
- One way to define a class is using a class declaration. To declare a class, you use the class keyword with the name of the class ("Rectangle" here).
+**Example**
 
-__Example__
-
-```javascript 
-
+```javascript
 class Rectangle {
   constructor(height, width) {
     this.height = height;
     this.width = width;
   }
 }
-
 ```
+
 ### Class expressions
 
 A class expression is another way to define a class. Class expressions can be named or unnamed. The name given to a named class expression is local to the class's body. However, it can be accessed via the name property.
 
-
-__Exmaple__
+**Exmaple**
 
 ```javascript
 // unnamed
@@ -617,13 +618,13 @@ Rectangle = class Rectangle2 {
 };
 console.log(Rectangle.name);
 // output: "Rectangle2"
-
 ```
+
 # Prototype
 
-In javascript, every function and object has a property named prototype by default. 
+In javascript, every function and object has a property named prototype by default.
 
-__For Example__
+**For Example**
 
 ```javacript
 function person(){
@@ -634,18 +635,19 @@ function person(){
 const person1 = new Person();
 const person2 = new Person();
 ```
+
 ## Protypal class
 
-The Prototypal inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. 
+The Prototypal inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object.
 
-__Example__
+**Example**
 
 ```javascript
-function Workshop (teacher){
-this. teacher = teacher;
+function Workshop(teacher) {
+  this.teacher = teacher;
 }
-Workshop.prototype.ask = function(question){
-    console.log(this.teacher,question);
+Workshop.prototype.ask = function (question) {
+  console.log(this.teacher, question);
 };
 
 var deepjs = new Workshop("kyle");
@@ -653,14 +655,14 @@ var reactjs = new Workshop("suzy");
 
 deepjs.ask("Is 'prototype' a class?");
 
-reactjs.ask("isn't 'protoype' ugly?")
+reactjs.ask("isn't 'protoype' ugly?");
 ```
 
 ## Prototype Chain
 
-Every object ub havascript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype . making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+Every object in javascript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype . making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
 
-__Example__
+**Example**
 
 ```javascript
 const myObject = {
@@ -671,4 +673,51 @@ const myObject = {
 };
 
 myObject.greet(); // Greetings from Madrid
+```
+
+## Dunder Prototypes
+
+dunder proto === **proto** Every object in js has the property. It points back to the prototype object of the constructor function that created that object.
+
+The **proto** property of Object. prototype is an accessor property(a getter function and a setter function)that express the internal[[prototype]](either an object or null) of the object through which it is accessed.
+
+
+__Example__
+
+```javascript
+function workshop(teacher) {
+    this.teacher = teacher;
+}
+workshop.prototype.ask = function (question) {
+    console.log(this.teacher, question);
+};
+
+var deepjs = new workshop("kyle");
+deepjs.constructor === workshop;
+deepjs.__proto__ === workshop.prototype;
+Object.getPrototypeOf(deepjs) === workshop.prototype; 
+
+deepjs.ask("what's up")
+```
+
+
+## Shadowin Prototype
+
+When creating a property on an object that has the same property name on its prototype chain it will shadow the proeprty on its prototype. This means that the property defined on the object will aleays be found first instead of looking through the prototype for the  proeprty.
+
+__Example__
+
+```javascript
+function workshop(teacher){
+    this.teacher=teacher;
+}
+workshop.prototype.ask = function(question){
+    console.log(this.teacher,question);
+};
+var deepJs = new workshop("simp");
+
+deepJs.ask = function(question){
+    this.__proto__.ask.call(this,question.toUpperCase());
+};
+deepJs.ask("Is this fake polymorphism?");
 ```
