@@ -8,7 +8,7 @@ if (flag1) {
     console.log('inside flag1')
 }
 let flag2 = new Boolean(false)
-if (!flag2) {
+if (!flag2 .ValueOf) {
     console.log("inside flag2");
 }
 let flag3 = Object(false)
