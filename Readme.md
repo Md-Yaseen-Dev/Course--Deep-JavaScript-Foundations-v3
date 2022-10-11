@@ -35,7 +35,8 @@ Coericion is a conversion of one data type to another data type.
 _Coercion is divded into two types:-_
 
 ## Implict Coercion:-
-    Implict coercion is a coversion of one data type to another data type automatically.
+
+ Implict coercion is a coversion of one data type to another data type automatically.
 
  _For Example:-_
   
