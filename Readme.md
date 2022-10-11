@@ -454,7 +454,7 @@ The module Pattern is one of the important patterns in Javascript. It is a commo
 
 - We expose certain properties and function as public and can also restirct the scope of properties and functions within the object itself, making them private.
 
-- We can achieve data hiding an abrastraction using this pattern.
+- We can achieve data hiding an abstraction using this pattern.
 
 ```javascript
 function EmployeeDetails() {
