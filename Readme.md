@@ -136,7 +136,7 @@ Lexical scope is tha ability of the inner function to access the outer scope in 
 
 ## Function Expression
 
-Function Expression allows us to create an anonymous function which doesn't have any function name which is the main difference between fucntion expression and function Declaration. A function expression can be used as an IIFE(immediately invoked Function Expression)which runs as soon as it is defined. A function expression has to be stored in a variable and can be accessed using variableName.
+Function Expression allows us to create an anonymous function which doesn't have any function name which is the main difference between function expression and function Declaration. A function expression can be used as an IIFE(immediately invoked Function Expression)which runs as soon as it is defined. A function expression has to be stored in a variable and can be accessed using variableName.
 
 Syntax for function Decalartion:-
 
