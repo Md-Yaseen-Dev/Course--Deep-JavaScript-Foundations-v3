@@ -18,3 +18,20 @@ func();
 console.log(myName)
 
 // the lexical scope of inner_func() and global scope . within func()and you can access myNAme and myAge.
+
+
+// Another Example
+
+const scope = "Globalscope";
+
+function outerscope(){
+     var scope1 = "parentscope"
+    console.log(scope);
+
+    function innerscope(){
+        console.log(scope + "&" + scope1)
+    }
+    innerscope();
+
+}
+outerscope();
