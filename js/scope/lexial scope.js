@@ -51,7 +51,7 @@ function Parentscope(){
 
     function Childscope(){
         var c = "childland"
-       console.log(a + " & " + b)
+       console.log(a + "    & " + b)
        console.log(c)
     }
     Childscope();
