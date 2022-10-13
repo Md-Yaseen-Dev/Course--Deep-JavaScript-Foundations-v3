@@ -23,7 +23,7 @@ console.log(teacher);
 
 // here above it is not a function declaration.  Because the word function is not the first thing in the statement.
 
-//  In other words, those parenthesis are there literally for no other purpose than tp syntactically turn that into an expression instead of a declaration. There are a variety of other syntactic ways to turn a function into an expression.
+//  In other words, those parenthesis are there literally for no other purpose than to syntactically turn that into an expression instead of a declaration. There are a variety of other syntactic ways to turn a function into an expression.
 
 
 // Also we can use unary operators such as given below :-

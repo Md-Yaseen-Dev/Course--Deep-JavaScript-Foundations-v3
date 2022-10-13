@@ -47,4 +47,3 @@ console.log(obj);
 console.log(+obj);
 console.log(obj + 456);
 
-
