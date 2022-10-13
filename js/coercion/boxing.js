@@ -21,3 +21,7 @@ if (!flag3) {
 // console.log(flag === false)
 // console.log(flag.valueOf() == false)
 // console.log(flag.valueOf() === false)
+
+var x  ="yaseen";
+var y = x.toUpperCase();
+console.log(y);
