@@ -87,3 +87,7 @@ else
 {
     console.log(false);
 }
+
+// note 
+// == checks the value . and allows coericion
+//==== checks the value and type , it doesn't allow the coericion
