@@ -1,4 +1,4 @@
-# Types
+> # Types
 Types are divided into two categories they are:-
 1. Primitive Data Types
 1. Non-Primitive Data Types
