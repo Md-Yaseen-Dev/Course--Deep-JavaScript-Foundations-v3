@@ -28,7 +28,7 @@ Types are divided into two categories they are:-
 ## click the link below
 [Types](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Types)
 
-# Coercion
+> # Coercion
 
 Coericion is a conversion of one data type to another data type.
 
@@ -58,7 +58,7 @@ In first line Number is converted to string.
 In second line string is coverted to number.
 
 ## Explict Coercion
-Explicit Coercion is conversion of one data type to another data type manually  and it provides inbuilt methods .\
+Explicit Coercion is conversion of one data type to another data type manually  and it provides inbuilt methods .
 
 _For Example:-_
  converting to number  we use built in function **Number()**.
@@ -74,9 +74,11 @@ console.log(b);
 
 ## For more Information click below:-
 [Coericion](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/coercion)
-# Equality (==)
 
-The Equality operator (==) checks whether its two Operands are equal,returning a Boolean result. Unlike the Strict equality operator, it attempts to convert and compare operands that are of different types
+
+> # Equality (==)
+
+The Equality operator (==) checks whether its two Operands are equal,returning a Boolean result. Unlike the Strict equality operator, it attemnpts to convert and compare operands that are of different types
 
 Equality comparsion provides three types they are :-
 
@@ -100,7 +102,7 @@ Object.is() does no type conversion and no special handling for NaN, -0, and +0 
 
 [Github-Equality](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Equality)
 
-# Scopes
+> # Scopes
 
 Scopes in javascript refers to the current context of code, which determines the accessibilty of variables to javascript.
 
@@ -132,11 +134,11 @@ Lexical scope is tha ability of the inner function to access the outer scope in 
 
 [Scopes](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/scope)
 
-# Scopes Expression
+> # Scopes Expression
 
 ## Function Expression
 
-Function Expression allows us to create an anonymous function which doesn't have any function name which is the main difference between function expression and function Declaration. A function expression can be used as an IIFE(immediately invoked Function Expression)which runs as soon as it is defined. A function expression has to be stored in a variable and can be accessed using variableName.
+Function Expression allows us to create an anonymous function which doesn't have any function name which is the main difference between fucntion expression and function Declaration. A function expression can be used as an IIFE(immediately invoked Function Expression)which runs as soon as it is defined. A function expression has to be stored in a variable and can be accessed using variableName.
 
 Syntax for function Decalartion:-
 
@@ -188,7 +190,7 @@ var arrowfunction = (a, b) => a * b;
 
 [Scope Expression](https://github.com/mohammedyaseen2211/Course--Deep-JavaScript-Foundations-v3/tree/main/js/Scopes%20and%20Expression)
 
-# Advance scope
+># Advance scope
 
 ## lexical scope
 
@@ -428,7 +430,7 @@ console.log(a);
 var a = 5; //undefined
 ```
 
-# Closure
+> # Closure
 
 Closures are defined as inner functions that have access to variables and parameters of outer function even after the outer function has returned. The below examples show the practical use of closures :
 
@@ -454,7 +456,7 @@ The module Pattern is one of the important patterns in Javascript. It is a commo
 
 - We expose certain properties and function as public and can also restirct the scope of properties and functions within the object itself, making them private.
 
-- We can achieve data hiding an abstraction using this pattern.
+- We can achieve data hiding an abrastraction using this pattern.
 
 ```javascript
 function EmployeeDetails() {
@@ -484,7 +486,7 @@ console.log(newEmployee);
 console.log(usersalary);
 ```
 
-# Objects
+> # Objects
 
 ## The this keyword
 
@@ -696,7 +698,7 @@ console.log(Rectangle.name);
 // output: "Rectangle2"
 ```
 
-# Prototype
+> # Prototype
 
 In javascript, every function and object has a property named prototype by default.
 
