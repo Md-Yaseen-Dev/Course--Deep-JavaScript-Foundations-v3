@@ -26,10 +26,22 @@ console.log(object1.valueOf());
 
 // hint : "Number"
 
-valueof();
-toString();
+// valueof();
+// toString();
 
 // if "string " hint is sent, toString() method is invoked first and if we get a primitive type form the result then we are done. But if the result is agian a  non primitive, valueOf() gets invoked.
 
-toString();
-valueOf();
+// toString();
+// valueOf();
+
+
+//  Example
+var ToPrimitive = [""];
+console.log(ToPrimitive);
+console.log([""].valueOf());// here still it is non primitive
+var x  = ToPrimitive.toString();
+console.log(x); // here showing error why ??
+// non primitve string
+
+
+
