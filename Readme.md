@@ -180,6 +180,8 @@ Arrow function is a Function with Arrow mark `(=>)` and works as usual like regu
 
 Arrow function is one of the features introduced in the Es6 version of javascript. It allows you to create functions in a cleaner way compared to regular functions.
 
+Arrow functiion is just like Regular function but in arrow function it is callable but not constructable like (New keyword) and (this keyword)
+
 for Example:-
 
 ```javascript
