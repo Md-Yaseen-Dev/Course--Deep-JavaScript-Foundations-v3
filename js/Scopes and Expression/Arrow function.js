@@ -71,4 +71,3 @@ let add1 =  function sum(x,y){
     console.log(x+y);
 }
 add1(10,2);
-new add1(4,5); // here constructor is working.
