@@ -19,3 +19,38 @@ function outerfunc(){
 }
 outerfunc();
 console.log(x);
+
+// 
+var x = 10 ;
+var y = 10;
+
+if(x===y){
+    console.log(true);
+}
+else{
+    console.log(false);
+}
+
+// since object are not equal 
+var a ={
+     num :10,
+}
+var b ={
+    num :20,
+}
+if(a===b){
+    console.log(true);
+
+}
+else{
+    console.log(false);
+}
+// deletling a property
+console.log(delete a.num);
+console.log(a);
+console.log(a.num);
+
+console.log(num in b);
+
+
+

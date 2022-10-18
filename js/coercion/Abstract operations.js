@@ -20,7 +20,7 @@ console.log(object1.valueOf());
 // If we have non primitive type like function, object array and we need a primitive equivalent
 
 
-// Every Non-= primitive can have two methods abailable toString and valueOf. 
+// Every Non-= primitive can have two methods available toString and valueOf. 
 
 // If 'number' hint is sent, valueof() method is invoked first. and if we get a primitive type from the reuslt then we are done. But if the result is again a non primitive, toString gets invoked.
 
@@ -42,6 +42,4 @@ console.log([""].valueOf());// here still it is non primitive
 var x  = ToPrimitive.toString();
 console.log(x); // here showing error why ??
 // non primitve string
-
-
 
