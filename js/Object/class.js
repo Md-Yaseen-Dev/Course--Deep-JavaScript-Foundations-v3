@@ -52,4 +52,21 @@ class workshop{
 
 var deepjs = new workshop('kyle');
 
-setTimeout(deepjs.ask,100,"Ia 'this' fixed?")
+setTimeout(deepjs.ask,100,"Is'this' fixed?")
+
+// the new keyword
+// - create a new empty object {}
+// - sets tthe value of this to be the new empty object
+//  -calls the constructir method
+
+class user {
+  constructor(){
+    this.email = "ysnt0@gmail.com";
+    this.name = "yaseen"
+  }
+}
+var user1 =new user();
+console.log(user1);
+
+// object is like blueprint
+// class is extra  work

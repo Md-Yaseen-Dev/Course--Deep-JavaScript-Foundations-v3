@@ -48,9 +48,24 @@ else{
 // deletling a property
 console.log(delete a.num);
 console.log(a);
-console.log(a.num);
+// console.log(a.num);
 
-console.log(num in b);
+// console.log(num in b);
 
+// for ex ample closoure
 
+var sub  = "apps"
 
+function makefunc(){
+    console.log(sub);
+
+    function innefunc(){
+    var sub ="paps";
+    console.log(sub);
+}
+return innefunc;
+}
+
+// console.log(makefunc());
+const myfunc = makefunc();
+myfunc();
