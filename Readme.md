@@ -706,7 +706,7 @@ In javascript, every function and object has a property named prototype by defau
 
 **For Example**
 
-```javacript
+```javascript
 function person(){
   this.name ="yaseen",
   this.age = 23
