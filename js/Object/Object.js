@@ -1,5 +1,4 @@
-// javascript objects are containers for named values clled properties. Object mehtod object can also have methods. Methods are action that can be performed.
-
+// javascript objects are containers for named values called properties. Object method object can also have methods. Methods are action that can be performed.
 // Example
 
 var object = {
@@ -9,45 +8,55 @@ var object = {
 }
 console.log(object)
 
-var x  = "yaseen"
+var s  = {
+   x : "yaseen",
 
-function outerfunc(){
-     console.log(x); // doubt
+
+function : function (){
+    //  console.log(this.x) // doubt -- it is hosting (if we dont assign a variable in a function , it access  a variable from global scope otherwise it shows undefined , if u REassign in a function.)
+
     // var x = "aaqib"
     // console.log(x);
+     return this.x;//why i did nt  understand
 
 }
-outerfunc();
-console.log(x);
+
+};
+console.log(s.function);
+// outerfunc();
+// console.log(x);
 
 // 
 var x = 10 ;
 var y = 10;
 
 if(x===y){
-    console.log(true);
+    console.log("values are equal " + true);
 }
 else{
     console.log(false);
 }
 
-// since object are not equal 
+// since object are not equal . if the
 var a ={
      num :10,
 }
 var b ={
     num :20,
 }
+
 if(a===b){
-    console.log(true);
+    console.log(  true);
 
 }
 else{
-    console.log(false);
+    console.log("the object are not equal  so it is: " + false);
 }
 // deletling a property
 console.log(delete a.num);
+console.log(b);
 console.log(a);
+
 // console.log(a.num);
 
 // console.log(num in b);
@@ -68,4 +77,8 @@ return innefunc;
 
 // console.log(makefunc());
 const myfunc = makefunc();
-myfunc();
+myfunc();  //  it is closure it remembers  even outer of lexical scope 
+
+
+let xtra = this;
+console.log(xtra);

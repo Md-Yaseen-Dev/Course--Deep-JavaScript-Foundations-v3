@@ -12,15 +12,16 @@ person.info();
 
 function ask(question) {
    
-    var mycontext = {
-        teacher: "sam"
-    };
-    console.log(this.teacher, question);
+    // var mycontext = {
+    //     teacher: "sam",   // i think it will be not required
+    // };                  
+    console.log(this.student, question);
 }
 
 function otherclass() {
     var mycontext = {
-        teacher: "sam"
+        teacher: "sam",
+        student : "broe"
     };
     ask.call(mycontext, "what")
 }

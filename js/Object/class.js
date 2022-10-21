@@ -3,7 +3,7 @@
 // classes are of two components
 // they are 1) class declaration  2) class expression
 
-// class declaration :- One way to define a class is using a class decalration. To declare a class, you can use the calss keyword with the name of the class
+// class declaration :- One way to define a class is using a class decalration. To declare a class, you can use the class keyword with the name of the class
 
 
 class Rectangle {
@@ -14,7 +14,7 @@ class Rectangle {
   }
 
   
-//   Class expression :- A class expression is another way to define a class. class expression can be named or unnamed. The naem given to a named class expression is local to the class body. However it can be accessed via the name property.
+//   Class expression :- A class expression is another way to define a class. class expression can be named or unnamed. The name given to a named class expression is local to the class body. However it can be accessed via the name property.
 
 
 // unnamed
@@ -28,13 +28,13 @@ let Rectangle1= class {
   // output: "Rectangle"
 
   // named
-Rectangle = class Rectangle2 {
+Rectangle2 = class Rectangle2 {
     constructor(height, width) {
       this.height = height;
       this.width = width;
     }
   };
-  console.log(Rectangle.name);
+  console.log(Rectangle2.name);
   // output: "Rectangle2"
   
   
@@ -52,12 +52,12 @@ class workshop{
 
 var deepjs = new workshop('kyle');
 
-setTimeout(deepjs.ask,100,"Is'this' fixed?")
+setTimeout(deepjs.ask,"Is'this' fixed?")
 
 // the new keyword
 // - create a new empty object {}
 // - sets tthe value of this to be the new empty object
-//  -calls the constructir method
+//  -calls the constructor method
 
 class user {
   constructor(){
@@ -65,8 +65,29 @@ class user {
     this.name = "yaseen"
   }
 }
-var user1 =new user();
+var user1 = new user();
 console.log(user1);
 
 // object is like blueprint
 // class is extra  work
+
+// another example of class 
+
+class bike{
+  constructor(name,model,color){
+   this.name = name,
+   this.model = model,
+   this.color = color
+   class Num extends bike{
+      super(number)
+      // this.number = number; }
+  }
+}
+};
+
+ var company = new Num(12,"Yamaha","Rx100","red");
+ console.log(company);
+
+num =10;
+console.log(num);
+// var num ;
