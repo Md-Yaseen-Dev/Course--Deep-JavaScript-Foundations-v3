@@ -10,20 +10,17 @@ console.log(object)
 
 var s  = {
    x : "yaseen",
-
-
-function : function (){
-    //  console.log(this.x) // doubt -- it is hosting (if we dont assign a variable in a function , it access  a variable from global scope otherwise it shows undefined , if u REassign in a function.)
-
-    // var x = "aaqib"
-    // console.log(x);
-     return this.x;//why i did nt  understand
-
 }
 
-};
-console.log(s.function);
-// outerfunc();
+function outerfunc(){
+     console.log(x) // doubt -- it is hosting (if we dont assign a variable in a function , it access  a variable from global scope otherwise it shows undefined , if u REassign in a function.)
+
+    var x = "aaqib"
+    console.log(x);
+    console.log(this.x);//why i did nt  understand
+
+}
+outerfunc();
 // console.log(x);
 
 // 
