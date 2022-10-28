@@ -47,4 +47,42 @@ console.log(arr.length);
 console.log(arr._proto_)//this is an array prototype
 // arr._proto_._proto_ //this is  an object prototype
 
-arr._proto_._proto_._proto_ //this will be null
+// arr._proto_._proto_._proto_ //this will be null
+
+class obj{
+    constructor(){
+
+    } 
+    fn(){}
+}
+
+console.log(new obj());
+
+function obj1(){}
+obj1.prototype.fn = function(){
+    var a =10;
+    console.log(a)
+};
+const a  = new obj1() 
+console.log(a);
+a.fn()
+// let obj = {}
+// obj.a = 1 ;
+
+// we can use constructor property to create a new object using the same constructor as the existing one
+
+
+function Rabbit(name){
+    this.name = name ;
+    console.log(name);
+}
+let rabbit = new Rabbit("white rabbit")
+let rabbit1 = new rabbit.constructor("black rabbit")
+
+class prototype{
+    constructor(name){
+        this.name = name;
+    }
+}
+
+console.log(prototype)

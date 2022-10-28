@@ -18,4 +18,6 @@ deepjs.ask("what's up")
 
 // why some people say dundar prototypes are discouraged and why we use Object.getPrototypeOf in its place 
 
-// Dunder prototype - objectname.prototype.function    
+// Dunder prototype - objectname.prototype.function  
+
+// 

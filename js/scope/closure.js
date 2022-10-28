@@ -1,13 +1,15 @@
 // closure is same as lexical scope but it work on lexical enivornment . The differnce between them is, innerfunction is a closure becaaues it closes over the variable of global scope from its lexical scope .
 
 // In other words 
+// var a = undefined ;
 
-
+console.log(a);
+// a=1 ;
+var a =1;
 const global  = "globalscope";
 function outerfunc(){
   let parentvar = " I am parent scope";
   console.log(global);
-
         function innerfunc(){
             let childvar = " i am child scope"
             console.log(parentvar);

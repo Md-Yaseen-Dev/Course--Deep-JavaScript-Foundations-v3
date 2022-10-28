@@ -45,13 +45,13 @@ workshop.ask('Is this a module?');
 
 //Modules encapuslate date and behaviour methods together. The state of a module is held by its methods via closure.
 
-var workshop = (function Module(teacher){
+var workshop = function Module(teacher){
     var publicAPI ={ask,};
     return publicAPI;
 
     function ask(question){
         console.log(teacher, question);
     }
-})('kyle');
+}('kyle');
 
 workshop.ask("it's a module, right")

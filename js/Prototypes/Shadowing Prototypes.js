@@ -11,13 +11,17 @@
 // deepJs.ask("oops, is this finite recursion/");
 
 
-function workshop(teacher){
+function workshop(teacher,number){
     this.teacher=teacher;
+    this.number = 2 * number
+    console.log(this)
 }
 workshop.prototype.ask = function(question){
     console.log(this.teacher,question);
 };
-var deepJs = new workshop("simp");
+var deepJs1 = new workshop("simp",2);
+var deepJs2 = new workshop("Anony",4);
+
 
 deepJs.ask = function(question){
     this.__proto__.ask.call(this,question.toUpperCase());

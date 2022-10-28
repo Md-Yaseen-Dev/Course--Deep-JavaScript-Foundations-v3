@@ -6,14 +6,14 @@
 function mulFn() {
   var mul = 9;
   return function (val) {
-    mul = mul * val;
+    console.log(mul * val);
     return mul;
   }
 }
 
-var mul = mulFn();
+const mult = mulFn();
 
-console.log(mul(13));
+mult(12);
 
 
 // closure
