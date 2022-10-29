@@ -56,6 +56,6 @@ function Parentscope(){
     }
     Childscope();
 
-    //  console.log(c)  // here you are getting refernce error is not defined.
+    //  console.log(c)  // here you are getting refernce error is not defined.s
  }
 Parentscope();

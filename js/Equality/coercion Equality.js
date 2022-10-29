@@ -67,7 +67,7 @@ else{
 
 
 }
-}
+}  //// because of corner cases 1 and -1 have different values. according to maths they are not equal whereas 0 and -0 belongs to same value.
 var e = equality();
 console.log(e);
 
@@ -79,7 +79,7 @@ var obj1 = {
 var obj2 = {
     name : "india"
 }
-
+ obj1 =obj2;
 if(obj1 === obj2){
     console.log(true);
 }

@@ -2,7 +2,7 @@
 var teacher = "shaik";
 function otherclass(){
     var teacher = "roshan";
-    console.log("welcome!")
+    console.log("welcome!" + " " + teacher)
 }
 function ask(){
     var question = "why?";

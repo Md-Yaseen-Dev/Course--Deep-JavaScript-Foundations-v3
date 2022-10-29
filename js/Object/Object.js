@@ -13,11 +13,11 @@ var s  = {
 }
 
 function outerfunc(){
-     console.log(x) // doubt -- it is hosting (if we dont assign a variable in a function , it access  a variable from global scope otherwise it shows undefined , if u REassign in a function.)
+     console.log(s) // doubt -- it is hosting (if we dont assign a variable in a function , it access  a variable from global scope otherwise it shows undefined , if u REassign in a function.)
 
-    var x = "aaqib"
+    var x = {name :"aaqib"}
     console.log(x);
-    console.log(this.x);//why i did nt  understand
+    console.log(this.name );//why i did nt  understand
 
 }
 outerfunc();

@@ -81,7 +81,7 @@ class bike{
    class Num extends bike{
       super(number)
       // this.number = number; }
-  }
+  };
 }
 };
 

@@ -16,5 +16,7 @@ var num = [1,2,3]; //because of empty string
 console.log(Number(num));
 console.log(num.valueOf());
 
+var num = {};
+console.log(Number(num));
 
 

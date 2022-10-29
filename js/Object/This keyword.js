@@ -24,6 +24,8 @@ function otherclass() {
         student : "broe"
     };
     ask.call(mycontext, "what")
+    ask.call(mycontext,"sorry")
+
 }
 
 otherclass();
