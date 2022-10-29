@@ -85,4 +85,72 @@ class prototype{
     }
 }
 
-console.log(prototype)
+console.log(new prototype("Ben"))
+
+
+//  create multiple objects 
+
+// In javascript, multiple objects can be created in a constructor 
+
+// constructor
+function user(){
+    this.name ="bell";
+}
+var user1 = new user();
+var user2 = new user();
+console.log(user1);
+console.log(user2);
+// in the above example, two objects are created using the same constructor
+
+// constructor with parameters
+
+// A constructor can alos have parameters
+
+function user3(name,age){
+    this.name = name;
+    this.age = age;
+}
+var use = new user3('spike',24);
+var use1 = new user3("alice",39);
+console.log(use);
+console.log(use1);
+
+// here the above arguments are passed to the constructor during object creation. and it will have different instance objects.
+
+// constructor vs object literal
+// An object literal is typically used to create a single object whereas a constructor is useful for creating multiple objects.
+
+// object literals
+// an object literal is typically used to create a single object whereas a constructor is useful for creating multiple objects.
+
+let objec = {
+  name: "summy"
+}
+
+// constructor
+function func(){
+    this.name = "kyle";
+}
+var func1 = new func();
+var func2 = new func();
+console.log(func1);
+console.log(func2);
+
+// here objects literals have only one object. but constructor can create  multiple object using same constructor and it doesn't change in constructor object. but literal can change the original object.
+
+
+// object prototype
+// properties and methods can be added to a constructor using a prototype
+
+function ob_pro(){
+    this.name ="boss";
+}
+
+let ob_pro1 = new ob_pro();
+let ob_pro2 = new ob_pro();
+
+ob_pro.prototype.age = 25;
+console.log(ob_pro1.age)
+console.log(ob_pro2.age)
+
+
