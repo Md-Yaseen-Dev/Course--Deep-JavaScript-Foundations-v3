@@ -115,7 +115,9 @@ let user2 = {
         // return `{money : ${this.money}}`
     }
 };
+// alert(+user2)
 
-alert(+user2)
-alert(user2)
+console.log(user2)
+
+
 
