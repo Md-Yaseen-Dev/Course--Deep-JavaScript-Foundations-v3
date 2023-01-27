@@ -51,12 +51,12 @@ var values = [
     , , -0, 0, 14, 42, NaN, -Infinity, Infinity,
     "", "0", "-0", "42", "42hello", "ture", "NaN", true, false, myObj
 ];
-// console.log(setsmatch(findall(null, values), [null, undefined]) === true);
-// console.log(setsmatch(findall(undefined, values), [undefined, null]) === true);
+console.log(setsmatch(findall(null, values), [null, undefined]) === true);
+console.log(setsmatch(findall(undefined, values), [undefined, null]) === true);
 console.log(setsmatch(findall(0, values), [0, "0"]) === true);
 console.log(setsmatch(findall(-0, values), [0]) === true);
 console.log(setsmatch(findall(14, values), [14]) === true);
-console.log(setsmatch(findall(42, values), [42, "42"]) === true);
+console.log(setsmatch(findall(42, vzalues), [42, "42"]) === true);
 console.log(setsmatch(findall(NaN, values), [NaN]) === true);
 console.log(setsmatch(findall(-Infinity, values), [-Infinity]) === true);
 console.log(setsmatch(findall(Infinity, values), [Infinity]) === true);

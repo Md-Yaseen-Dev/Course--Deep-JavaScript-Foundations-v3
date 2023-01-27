@@ -56,7 +56,7 @@ setTimeout(deepjs.ask,"Is'this' fixed?")
 
 // the new keyword
 // - create a new empty object {}
-// - sets tthe value of this to be the new empty object
+// - sets the value of this to be the new empty object
 //  -calls the constructor method
 
 class user {
@@ -81,7 +81,7 @@ class bike{
    class Num extends bike{
       super(number)
       // this.number = number; }
-  };
+  }
 }
 };
 
@@ -91,3 +91,54 @@ class bike{
 num =10;
 console.log(num);
 // var num ;
+
+
+// this is own example
+
+class Person {
+  constructor(name) {
+      this.name = name;
+  }
+
+  sayName() {
+      console.log(`My name is ${this.name}`);
+  }
+}
+
+class Student  {
+  constructor(name, school) {
+      // super(name);
+      this.school = school;
+  }
+
+  saySchool() {
+      console.log(`I go to ${this.school}`);
+  }
+}
+// ----- without extend class we get eror to student class we cannot access with the same, and it will be more code
+let john = new Person("John", "MIT");
+john.sayName(); // "My name is John"
+// john.saySchool(); // "I go to MIT"
+
+class Student1 extends Person {
+
+  // we use super constructor to use another this 
+
+
+  constructor(name,school ,teacher) {
+      super(name);
+      this.school = school;
+      this.teacher =teacher;
+  }
+
+  saySchool() {
+      console.log(`I go to ${this.school}`);
+      console.log(`World best tutor ${this.teacher}`);
+
+  }
+}
+
+let john1 = new Student1("Johnnny", "MIT", "kyle");
+john1.sayName();
+john1.saySchool();
+

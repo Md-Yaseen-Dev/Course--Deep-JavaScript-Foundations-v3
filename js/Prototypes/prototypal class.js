@@ -1,10 +1,10 @@
 //  WE don't write class any more but i think its important for us know you to understands how this plumbning works. where all it works
 
-function Workshop (teacher){
-this. teacher = teacher;
+function Workshop(teacher) {
+    this.teacher = teacher;
 }
-Workshop.prototype.ask = function(question){
-    console.log(this.teacher,question);
+Workshop.prototype.ask = function (question) {
+    console.log(this.teacher, question);
 };
 
 var deepjs = new Workshop("kyle");
@@ -20,12 +20,13 @@ reactjs.ask("isn't 'protoype' ugly?")
 
 // one of special name for prototype is __proto__
 
-let animal = { 
-    eat:true};
-    let rabbit = {
-        jumps: true
-    };
-    // animal.__proto__ = rabbit;
-    rabbit.__proto__ = animal;
-    console.log(rabbit.__proto__);
-    // console.log(animal.__proto__);
+let animal = {
+    eat: true
+};
+let rabbit = {
+    jumps: true
+};
+animal.__proto__ = rabbit; // it returns rabbit object.property and value
+// rabbit.__proto__ = animal;
+// console.log(rabbit.__proto__);
+console.log(animal.__proto__);

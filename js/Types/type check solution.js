@@ -1,4 +1,4 @@
-if (!Object.is || true) {
+if (Object.is || true) {
     Object.is = function ObjectsIs(x, y) {
         var x_Negzero = isItNegzero(x);
         var y_Negzero = isItNegzero(y);
