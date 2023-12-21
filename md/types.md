@@ -7,7 +7,7 @@ Types are divided into two categories they are:-
 ## Primitive Data Types:-
    A  primitive type is a data  which has no methods or properties.
 
-  _Primitive Data type is conisits of eight types they are:-_
+  _Primitive Data type is consists of eight types they are:-_
 
    * Number
    * String
